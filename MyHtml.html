@@ -4,28 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masekwameng Mapula's Virtual CV</title>
-    <link rel="=MyCSS" href="MyCSS.css">
+    <link rel="stylesheet" href="MyCSS.css">
 </head>
 <body>
     <div class="hero">
-        <video autoplay loop muted plays-inline class="=back-video">
-            <source src="images/Vid1.mp4" type="video/mp4"
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/Vid2.mp4" type="video/mp4">
         </video>
-        <nav>
-            <img src="images/Dark.png" class="darkmode">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
-
-                </li>
-            </ul>
-        </nav>
-
+        <div class="content">
+            <h1>CYBERSECURITY SOFTWARE DEVELOPER</h1>
+            <button class="explore-button" id="explore-button">Explore</button>
+        </div>
     </div>
-    <div class="content">
-        <h1>CYBERSECURITY SOFTWARE DEVELOPER</h1>
-        <a href="#">Explore</a>
+    <nav>
+        <ul>
+            <li><a href="MyHtml.html">HOME</a></li>
+            <li><a href="MyAbout.html">ABOUT</a></li>
+            <li>
+                <button id="contact-button">CONTACT</button>
+                <div id="contact-options" class="dropdown-content">
+                    <label for="contact-mode">How To Reach me:</label>
+                    <select id="contact-mode">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="github">GitHub</option>
+                    </select>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="cursor"></div>
+    <div class="cursor-lazy"></div>
+    <div id="resume-section" class="resume-container">
+        <h1>My Resume</h1>
+        <a href="Mapula Masekwameng Resume.pdf" download>Download Resume</a>
     </div>
+    <script src="MyJavascript.js"></script>
 </body>
 </html>
