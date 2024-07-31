@@ -123,7 +123,7 @@ nav .darkmode {
     height: 100vh;
     background: linear-gradient(270deg, rgb(0, 0, 0), rgba(141, 166, 141, 0.436));
     background-size: 350% 250%;
-    animation: bg-animation 30s ease infinite;
+    animation: bg-animation 15s ease infinite;
 }
 
 .about-container::before {
@@ -154,9 +154,9 @@ nav .darkmode {
 }
 
 .about-content h1, .about-content p {
-    color: #aad4b8bb;
+    color: whitesmoke;
     font-weight: bold;
-    font-style: normal;
+    font-style:initial
 }
 
 .about-content h1 {
@@ -245,9 +245,9 @@ nav .darkmode {
 #contact-options {
     display: none;
     position: absolute;
-    background-color: hsl(318, 20%, 35%);
+    background-color: hsl(174, 19%, 79%);
     min-width: 250px;
-    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    box-shadow: 2px 2px 5px hsla(183, 39%, 79%, 0.8);
     padding: 10px;
     z-index: 1000;
 }
@@ -260,7 +260,7 @@ nav .darkmode {
 #contact-mode {
     width: 100%;
     padding: 5px;
-    border: 1px solid hsl(296, 8%, 37%);
+    border: 1px solid hsl(154, 11%, 71%);
     border-radius: 3px;
 }
 

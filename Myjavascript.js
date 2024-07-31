@@ -1,4 +1,4 @@
-// Cursor effects
+
 const cursor = document.querySelector('.cursor');
 const cursorLazy = document.querySelector('.cursor-lazy');
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// MyJavascript.js
+
 document.addEventListener('DOMContentLoaded', function() {
     const contactButton = document.getElementById('contact-button');
     const contactOptions = document.getElementById('contact-options');
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (mode === 'email') {
              url = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=masekwamengmapula5@gmail.com';
-            keepGoing = false; // Exit the loop after setting the URL
+            keepGoing = false;
         } else if (mode === 'phone') {
              url = 'tel:+27 697 673 337';
             keepGoing = false;
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
            url = 'https://github.com/mapulaMobs53';
            keepGoing = false;
         } else {
-        // Handle invalid mode selection (optional)
+        // Handle invalid mode selection
         console.error("Invalid contact mode selected:", mode);
     }
     } while (keepGoing);
