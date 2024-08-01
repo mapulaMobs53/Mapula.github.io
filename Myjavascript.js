@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     } while (keepGoing);
 
-if (url) {
-  window.open(url, '_blank');
-}
+    if (url) {
+         window.open(url, '_blank');
+        }
 
         if (url) {
             window.open(url, '_blank');
