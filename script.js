@@ -74,13 +74,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (url) {
             window.open(url, '_blank');
-        }
+        };
     });
 
             if (url) {
                 window.open(url, '_blank');
             }
-        });
+        };
     
         // Close the combobox if user clicks outside it
         document.addEventListener('click', function(event) {
@@ -89,4 +89,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-});
+);
