@@ -2,19 +2,19 @@
 const cursor = document.querySelector('.cursor');
 const cursorLazy = document.querySelector('.cursor-lazy');
 
-document.addEventListener('mousemove', (e) => {
+document.addEventListener('mousemove', function(e) {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
     cursorLazy.style.left = e.clientX + 'px';
     cursorLazy.style.top = e.clientY + 'px';
 });
 
-document.addEventListener('mouseover', () => {
+document.addEventListener('mouseover', function() {
     cursor.classList.add('active');
     cursorLazy.classList.add('active');
 });
 
-document.addEventListener('mouseout', () => {
+document.addEventListener('mouseout', function() {
     cursor.classList.remove('active');
     cursorLazy.classList.remove('active');
 });
@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-//Contact functions will be here
 document.addEventListener('DOMContentLoaded', function() {
     const contactButton = document.getElementById('contact-button');
     const contactOptions = document.getElementById('contact-options');
@@ -59,31 +58,26 @@ document.addEventListener('DOMContentLoaded', function() {
         let url = '';
         let keepGoing = true;
 
-   do {
-        const mode = contactMode.value;
+        do {
+            const mode = contactMode.value;
 
-        if (mode === 'email') {
-             url = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=masekwamengmapula5@gmail.com';
-            keepGoing = false;
-        } else if (mode === 'phone') {
-             url = 'tel:+27 697 673 337';
-            keepGoing = false;
-        } else if (mode === 'linkedin') {
-            url = 'https://www.linkedin.com/in/mapula-masekwameng-1513222b1';
-            keepGoing = false;
-        } else if (mode === 'github') {
-           url = 'https://github.com/mapulaMobs53';
-           keepGoing = false;
-        } else {
-        // Handle invalid mode selection
-        console.error("Invalid contact mode selected:", mode);
-        console.log(url);
-    }
-    } while (keepGoing);
-
-    if (url) {
-         window.open(url, '_blank');
-        }
+            if (mode === 'email') {
+                url = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=masekwamengmapula5@gmail.com';
+                keepGoing = false;
+            } else if (mode === 'phone') {
+                url = 'tel:+27 697 673 337';
+                keepGoing = false;
+            } else if (mode === 'linkedin') {
+                url = 'https://www.linkedin.com/in/mapula-masekwameng-1513222b1';
+                keepGoing = false;
+            } else if (mode === 'github') {
+                url = 'https://github.com/mapulaMobs53';
+                keepGoing = false;
+            } else {
+                console.error("Invalid contact mode selected:", mode);
+                console.log(url);
+            }
+        } while (keepGoing);
 
         if (url) {
             window.open(url, '_blank');
