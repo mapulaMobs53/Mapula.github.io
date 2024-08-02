@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
         // Handle invalid mode selection
         console.error("Invalid contact mode selected:", mode);
+        console.log(url);
     }
     } while (keepGoing);
 
