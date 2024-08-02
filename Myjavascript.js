@@ -51,24 +51,32 @@ document.addEventListener('DOMContentLoaded', function() {
             let url = '';
             const mode = contactMode.value;
     
-            switch (mode) {
-                case 'email':
-                    url = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=masekwamengmapula5@gmail.com';
-                    break;
-                case 'phone':
-                    url = 'tel:+27 697 673 337';
-                    break;
-                case 'linkedin':
-                    url = 'https://www.linkedin.com/in/mapula-masekwameng-1513222b1';
-                    break;
-                case 'github':
-                    url = 'https://github.com/mapulaMobs53';
-                    break;
-                default:
-                    console.error("Invalid contact mode selected:", mode);
-                    return;
+            do {
+            const mode = contactMode.value;
+
+            if (mode === 'email') {
+                url = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=masekwamengmapula5@gmail.com';
+                keepGoing = false;
+            } else if (mode === 'phone') {
+                url = 'tel:+27 697 673 337';
+                keepGoing = false;
+            } else if (mode === 'linkedin') {
+                url = 'https://www.linkedin.com/in/mapula-masekwameng-1513222b1';
+                keepGoing = false;
+            } else if (mode === 'github') {
+                url = 'https://github.com/mapulaMobs53';
+                keepGoing = false;
+            } else {
+                console.error("Invalid contact mode selected:", mode);
+                console.log(url);
             }
-    
+        } while (keepGoing);
+
+        if (url) {
+            window.open(url, '_blank');
+        }
+    });
+
             if (url) {
                 window.open(url, '_blank');
             }
