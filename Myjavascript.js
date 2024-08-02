@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
+//Contact functions will be here
 document.addEventListener('DOMContentLoaded', function() {
     const contactButton = document.getElementById('contact-button');
     const contactOptions = document.getElementById('contact-options');
