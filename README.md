@@ -1,6 +1,4 @@
 # Virtual-Cv-stuff
-MAPULA MASEKWAMENG, 41430379
-
 Home/Index Page Overview:
 1.	Page Title and CSS Reference: The page is titled to clearly indicate that this is my Virtual CV. It references a CSS sheet that handles the animations, decorations, and overall visual appeal of the page.
 2.	Autoplay Video Background: Instead of a static picture, I chose to use a video of myself that plays on an autoplay loop. This video serves as a dynamic background, replaying as many times as I prefer.
